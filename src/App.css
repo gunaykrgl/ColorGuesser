@@ -5,6 +5,10 @@
 }
 
 .box {
+  position: fixed;
+  top: 0;
+  margin-top: 100px;
+
   width: 100px;
   height: 100px;
   border: 1px solid red;
@@ -14,5 +18,5 @@
   display: grid;
   grid-template-columns: 200px 200px;
   grid-template-rows: auto auto;
-  gap: 10px;
+  gap: 30px;
 }
