@@ -9,12 +9,20 @@ function App() {
     const data = await res.json()
     setColorNames(data)
   }
+
+  // Fetch the data, when first loaded
   useEffect(()=>{
     fetchData()
   },[])
   
+  function getRandomColor(obj){
+    let keys = Object.keys(obj)
+    return keys[keys.length * Math.random() << 0]
+  }
+  
+  const randomColor = getRandomColor(colorNames)
   return (
-    <Card />
+    <Card color={randomColor}/>
   )
 }
 
