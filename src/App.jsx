@@ -22,7 +22,9 @@ function App() {
   
   const randomColor = getRandomColor(colorNames)
   return (
-    <Card color={randomColor}/>
+    <Card 
+      color = {randomColor}
+    />
   )
 }
 

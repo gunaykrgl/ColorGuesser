@@ -6,7 +6,7 @@ export default function Card(props){
     
     // store the correct name of the color
     const answer = props.color
-    console.log(answer)
+    
     let styles = {
         backgroundColor: `${props.color}`
     }
@@ -14,7 +14,9 @@ export default function Card(props){
     function handleChange(e) {
         setInput(e.target.value)
         
-        
+        if (input === answer){
+            console.log("Congratulations")
+        }
     }
     
     return (
